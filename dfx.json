@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "Decentralised_Notes_backend": {
+      "main": "src/Decentralised_Notes_backend/main.mo",
+      "type": "motoko"
+    },
+    "Decentralised_Notes_frontend": {
+      "dependencies": [
+        "Decentralised_Notes_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/Decentralised_Notes_frontend/src/index.html"
+      },
+      "source": [
+        "src/Decentralised_Notes_frontend/assets",
+        "dist/Decentralised_Notes_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
